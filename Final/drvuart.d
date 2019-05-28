@@ -1,0 +1,10 @@
+drvuart.o: ..\..\..\Src\Driver\DrvUART.c
+drvuart.o: C:\Keil\ARM\RV31\Inc\stdio.h
+drvuart.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+drvuart.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+drvuart.o: C:\Keil\ARM\RV31\Inc\stdint.h
+drvuart.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+drvuart.o: ..\..\..\Include\System\SysInfra.h
+drvuart.o: ..\..\..\Include\System\ModuleID.h
+drvuart.o: ..\..\..\Include\Driver\DrvUART.h
+drvuart.o: ..\..\..\Include\Driver\DrvSYS.h

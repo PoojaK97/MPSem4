@@ -1,0 +1,9 @@
+	PRESERVE8
+	THUMB
+	AREA |.text|,CODE,READONLY
+	EXPORT func1
+func1
+	MOVS R0,#10
+	BX LR
+stop B stop
+END

@@ -1,0 +1,1 @@
+--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Nuvoton\NUC1xx --list "7a1.lst" --xref -o "7a1.o" --depend "7a1.d" "7a1.asm"

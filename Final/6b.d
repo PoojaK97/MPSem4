@@ -1,0 +1,11 @@
+6b.o: 6b.c
+6b.o: C:\Keil\ARM\RV31\Inc\stdio.h
+6b.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+6b.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+6b.o: C:\Keil\ARM\RV31\Inc\stdint.h
+6b.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+6b.o: ..\..\..\Include\System\SysInfra.h
+6b.o: ..\..\..\Include\System\ModuleID.h
+6b.o: ..\..\..\Include\Driver\DrvGPIO.h
+6b.o: ..\..\..\Include\Driver\DrvUART.h
+6b.o: ..\..\..\Include\Driver\DrvSYS.h

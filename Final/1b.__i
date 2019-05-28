@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\..\CMSIS\CM0\DeviceSupport -I..\..\..\Include\Driver -I..\..\..\Include\NUC1xx-LB_002 -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Nuvoton\NUC1xx -o "1b.o" --omf_browse "1b.crf" --depend "1b.d" "1b.c"

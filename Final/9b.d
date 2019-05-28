@@ -1,0 +1,12 @@
+9b.o: 9b.c
+9b.o: C:\Keil\ARM\RV31\Inc\stdio.h
+9b.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+9b.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+9b.o: C:\Keil\ARM\RV31\Inc\stdint.h
+9b.o: C:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+9b.o: ..\..\..\Include\System\SysInfra.h
+9b.o: ..\..\..\Include\System\ModuleID.h
+9b.o: ..\..\..\Include\Driver\DrvSYS.h
+9b.o: ..\..\..\Include\Driver\DrvGPIO.h
+9b.o: ..\..\..\Include\NUC1xx-LB_002\scankey.h
+9b.o: ..\..\..\Include\NUC1xx-LB_002\LCD_Driver.h

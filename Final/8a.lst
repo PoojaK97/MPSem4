@@ -1,0 +1,172 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8
+    2 00000000                 THUMB
+    3 00000000                 AREA             |.text|,CODE,READONLY
+    4 00000000                 EXPORT           __main
+    5 00000000         __main
+    6 00000000 2003            MOVS             R0,#3
+    7 00000002 2803            CMP              R0,#3
+    8 00000004 D80C            BHI              default_case
+    9 00000006 2204            MOVS             R2,#4
+   10 00000008 4350            MULS             R0,R2,R0
+   11 0000000A 490A            LDR              R1,=BranchTable
+   12 0000000C 580A            LDR              R2,[R1,R0]
+   13 0000000E 4710            BX               R2
+   14 00000010                 ALIGN            4
+   15 00000010         BranchTable
+   16 00000010 00000000        DCD              Test0
+   17 00000014 00000000        DCD              Test1
+   18 00000018 00000000        DCD              Test2
+   19 0000001C 00000000        DCD              Test3
+   20 00000020         default_case
+   21 00000020 2001            MOVS             R0,#1
+   22 00000022 E7FE    stop    B                stop
+   23 00000024         Test0
+   24 00000024 2002            MOVS             R0,#2
+   25 00000026 E7FE    stop1   B                stop1
+   26 00000028         Test1
+   27 00000028 2003            MOVS             r0,#3
+   28 0000002A E7FE    stop2   B                stop2
+   29 0000002C         Test2
+   30 0000002C 2004            MOVS             R0,#4
+   31 0000002E E7FE    stop3   B                stop3
+   32 00000030         Test3
+   33 00000030 2005            MOVS             R0,#5
+   34 00000032 E7FE    stop4   B                stop4
+   35 00000034         END
+                       
+              00000000 
+Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=8a.d -o8
+a.o -IC:\Keil\ARM\RV31\Inc -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Nuvoto
+n\NUC1xx --predefine="__EVAL SETA 1" --list=8a.lst 8a.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 3 in file 8a.asm
+   Uses
+      None
+Comment: .text unused
+BranchTable 00000010
+
+Symbol: BranchTable
+   Definitions
+      At line 15 in file 8a.asm
+   Uses
+      At line 11 in file 8a.asm
+Comment: BranchTable used once
+END 00000034
+
+Symbol: END
+   Definitions
+      At line 35 in file 8a.asm
+   Uses
+      None
+Comment: END unused
+Test0 00000024
+
+Symbol: Test0
+   Definitions
+      At line 23 in file 8a.asm
+   Uses
+      At line 16 in file 8a.asm
+Comment: Test0 used once
+Test1 00000028
+
+Symbol: Test1
+   Definitions
+      At line 26 in file 8a.asm
+   Uses
+      At line 17 in file 8a.asm
+Comment: Test1 used once
+Test2 0000002C
+
+Symbol: Test2
+   Definitions
+      At line 29 in file 8a.asm
+   Uses
+      At line 18 in file 8a.asm
+Comment: Test2 used once
+Test3 00000030
+
+Symbol: Test3
+   Definitions
+      At line 32 in file 8a.asm
+   Uses
+      At line 19 in file 8a.asm
+Comment: Test3 used once
+__main 00000000
+
+Symbol: __main
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 5 in file 8a.asm
+   Uses
+      At line 4 in file 8a.asm
+Comment: __main used once
+default_case 00000020
+
+Symbol: default_case
+   Definitions
+      At line 20 in file 8a.asm
+   Uses
+      At line 8 in file 8a.asm
+Comment: default_case used once
+stop 00000022
+
+Symbol: stop
+   Definitions
+      At line 22 in file 8a.asm
+   Uses
+      At line 22 in file 8a.asm
+Comment: stop used once
+stop1 00000026
+
+Symbol: stop1
+   Definitions
+      At line 25 in file 8a.asm
+   Uses
+      At line 25 in file 8a.asm
+Comment: stop1 used once
+stop2 0000002A
+
+Symbol: stop2
+   Definitions
+      At line 28 in file 8a.asm
+   Uses
+      At line 28 in file 8a.asm
+Comment: stop2 used once
+stop3 0000002E
+
+Symbol: stop3
+   Definitions
+      At line 31 in file 8a.asm
+   Uses
+      At line 31 in file 8a.asm
+Comment: stop3 used once
+stop4 00000032
+
+Symbol: stop4
+   Definitions
+      At line 34 in file 8a.asm
+   Uses
+      At line 34 in file 8a.asm
+Comment: stop4 used once
+14 symbols
+347 symbols in table

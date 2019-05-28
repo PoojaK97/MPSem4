@@ -1,0 +1,78 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8
+    2 00000000                 THUMB
+    3 00000000                 AREA             |.text|,CODE,READONLY
+    4 00000000                 EXPORT           __main
+    5 00000000         __main
+    6 00000000 4805            LDR              R0,=0x20000100
+    7 00000002 4906            LDR              R1,=0x20000200
+    8 00000004 2200            MOVS             R2,#0
+    9 00000006         swap
+   10 00000006 5C83            LDRB             R3,[R0,R2]
+   11 00000008 5C8C            LDRB             R4,[R1,R2]
+   12 0000000A 548B            STRB             R3,[R1,R2]
+   13 0000000C 5484            STRB             R4,[R0,R2]
+   14 0000000E 1C52            ADDS             R2,R2,#1
+   15 00000010 2A0A            CMP              R2,#10
+   16 00000012 DBF8            BLT              swap
+   17 00000014 E7FE    stop    B                stop
+   18 00000016         END
+                       
+              00 00 20000100 
+              20000200 
+Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=3a.d -o3
+a.o -IC:\Keil\ARM\RV31\Inc -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Nuvoto
+n\NUC1xx --predefine="__EVAL SETA 1" --list=3a.lst 3a.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 3 in file 3a.asm
+   Uses
+      None
+Comment: .text unused
+END 00000016
+
+Symbol: END
+   Definitions
+      At line 18 in file 3a.asm
+   Uses
+      None
+Comment: END unused
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 5 in file 3a.asm
+   Uses
+      At line 4 in file 3a.asm
+Comment: __main used once
+stop 00000014
+
+Symbol: stop
+   Definitions
+      At line 17 in file 3a.asm
+   Uses
+      At line 17 in file 3a.asm
+Comment: stop used once
+swap 00000006
+
+Symbol: swap
+   Definitions
+      At line 9 in file 3a.asm
+   Uses
+      At line 16 in file 3a.asm
+Comment: swap used once
+5 symbols
+338 symbols in table
